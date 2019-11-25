@@ -4,6 +4,24 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="padding">
+  <ion-grid>
+    <ion-row>
+      <ion-col text-center>
+        Bienvenido
+      </ion-col>
+      
+    </ion-row>
+    <ion-row>
+      <ion-col text-center>
+        Te has registrado con el correo: {{ userEmail }}
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
 </ion-content>
+<ion-footer (click)="logout()">
+  <ion-toolbar color="secondary">
+    <ion-title>Log out</ion-title>
+  </ion-toolbar>
+</ion-footer>
